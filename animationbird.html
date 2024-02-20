@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .bg {
+            background-image: url(../images/bird-colorful-colorful-flowers-generative-ai_206725-752\ -\ Copy.avif);
+            height: 200px;
+            width: 200px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+      @keyframes lodinganimation {
+              from{transform: rotate(0deg);
+              }
+              to{transform: rotate(360deg) ;
+              }
+      }
+      .loading{
+          width:120px;
+          height:120px;
+          border:10px solid transparent;
+          border-top:10px solid rgb(12, 12, 12);
+          border-radius: 50%;
+          animation: lodinganimation 2s infinite;
+          margin: 30px;
+          margin-top: 40px;
+          text-align: center;
+         }
+         .image:checked~img {
+            transform: translate(10px);
+         }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="loading"></div><br>
+      </div>
+      <div>
+      <h3>Loading Completed</h3>
+      <img src="../images/bird 2.avif"style="height: 200px; width: 200px;"/>
+    </div>
+  </body>
+</html>

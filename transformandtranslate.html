@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes walking {
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translate(350px);
+            }
+        }
+        @keyframes bulb2 {
+            from{
+                background-color: orange;
+                
+            }
+            to{
+                background-color: orange;
+            }
+            
+        }
+        img {
+            height: 200px;
+            width: 200px;
+            animation-name: walking;
+            animation-duration: 6s;
+        }
+        .bulb1{
+            border: 2px solid black;
+            height: 10px;
+            width: 10px;
+            background-color: azure;
+            margin-left: 400px;
+        }
+        .bulb2{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: azure;
+            margin-left: 380px;
+            border-radius: 50%;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-name: bulb2;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="bulb1"></div>
+        <div class="bulb2"></div>
+        <img class="walking" src="../images/walking.avif"/>
+        <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - -  -</p>
+        
+    </div>
+</body>
+</html>
